@@ -32,7 +32,7 @@ public class Estacionamiento {
     }
 
     public String resumen() {
-        return "Autos dentro: " + ocupados + " | Cupos libres: " + cuposLibres();
+        return String.format(Mensajes.get("RESUMEN"), ocupados, cuposLibres());
     }
 
     private boolean setOcupados(int nuevoValor) {
